@@ -20,11 +20,14 @@
     .description {
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 30px;
-        color: #606060;
+        color: #7b7b7b;
         margin-top: 8px;
         margin-bottom: 8px;
+    }
+    .bg-primary {
+        background-color:  #ebebf8;
     }
 
     .title {

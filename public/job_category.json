@@ -1,26 +1,26 @@
 [
-    {
-      "category_name": "Creative Design",
-        "_id": "6433aeadcd80f88deaacfdc3",
-      "picture": "https://ibb.co/VSCJh19",
-      "available_job": 816
-    },
-    {
-      "category_name": "Account & Finance",
-        "_id": "6433aead57eab0b49e143152",
-      "picture": "https://ibb.co/86td0YN",
-      "available_job": 414
-    },
-    {
-      "category_name": "Marketing & Sales",
-        "_id": "6433aead44b4751b73f77a96",
-      "picture": "https://ibb.co/gyvDYxh",
-      "available_job": 552
-    },
-    {
-      "category_name": "Engineering Job",
-        "_id": "6433aeadf8b66c35ec05a4f0",
-      "picture": "https://ibb.co/kh5vWK2",
-      "available_job": 703
-    }
-  ]
+  {
+    "category_name": "Creative Design",
+    "_id": "6433aeadcd80f88deaacfdc3",
+    "picture": "https://i.ibb.co/58jGz04/accounts-1.png",
+    "available_job": 816
+  },
+  {
+    "category_name": "Account & Finance",
+    "_id": "6433aead57eab0b49e143152",
+    "picture": "https://i.ibb.co/myBmqVv/social-media-1.png",
+    "available_job": 414
+  },
+  {
+    "category_name": "Marketing & Sales",
+    "_id": "6433aead44b4751b73f77a96",
+    "picture": "https://i.ibb.co/9sSVNZc/business-1.png",
+    "available_job": 552
+  },
+  {
+    "category_name": "Engineering Job",
+    "_id": "6433aeadf8b66c35ec05a4f0",
+    "picture": "https://i.ibb.co/jhVLtSs/chip-1.png",
+    "available_job": 703
+  }
+]
