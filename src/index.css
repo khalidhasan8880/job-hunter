@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+    .btn-primary {
+        background-image: linear-gradient(to right, #7E8FFE 0%, rgb(151, 116, 255) 100%);
+        padding: 10px 20px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@layer base {
+    .description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: #606060;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 100px;
+        color: #1A1919;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
