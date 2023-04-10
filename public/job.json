@@ -1,8 +1,10 @@
 [
   {
-    "logo": "company1_logo.png",
+   "name":"Tesla",
+   "job_category": "Full-Time, Onsite, Remote",
+    "logo": "https://i.ibb.co/hVXbdHG/tesla-9-1.png",
     "engineer_title": "Software Engineer",
-    "LTD": "Unlimited",
+    "LTD": "Tesla",
     "location": "San Francisco, CA",
     "salary": "$100,000 - $120,000 per year",
     "job_description": "We are seeking a skilled Software Engineer to join our team and develop cutting-edge software applications. The ideal candidate will have experience in full-stack development, with expertise in modern web frameworks such as React and Node.js.",
@@ -14,9 +16,11 @@
     "address": "1234 Main St, San Francisco, CA 94101"
   },
   {
-    "logo": "company2_logo.png",
+   "name":"Netflix",
+   "job_category": "Full-Time, Remote",
+    "logo": "https://i.ibb.co/7nNSKqp/netflix-4-1.png",
     "engineer_title": "Data Scientist",
-    "LTD": "Limited",
+    "LTD": "Netflix",
     "location": "New York, NY",
     "salary": "$90,000 - $110,000 per year",
     "job_description": "We are looking for a talented Data Scientist to join our team and analyze complex data sets to derive insights and make data-driven decisions. The ideal candidate will have expertise in statistical analysis, machine learning, and data visualization.",
@@ -28,9 +32,11 @@
     "address": "5678 Broadway, New York, NY 10001"
   },
   {
-    "logo": "company3_logo.png",
+   "name":"Google Mama",
+   "job_category": "Full-Time, Onsite",
+    "logo": "https://i.ibb.co/NLtx3KY/google-1-1-1.png",
     "engineer_title": "Frontend Developer",
-    "LTD": "Unlimited",
+    "LTD": "Google LLC",
     "location": "London, UK",
     "salary": "£50,000 - £60,000 per year",
     "job_description": "We are seeking a talented Frontend Developer to join our team and create visually appealing and user-friendly web interfaces. The ideal candidate will have a strong background in frontend development, with expertise in modern web technologies such as React, Angular, or Vue.",
@@ -42,9 +48,11 @@
     "address": "123 High St, London, UK SW1A 1AA"
   },
   {
-    "logo": "company4_logo.png",
+   "name":"Apple",
+   "job_category": "Onsite, Remote",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png",
     "engineer_title": "DevOps Engineer",
-    "LTD": "Limited",
+    "LTD": "Apple",
     "location": "Seattle, WA",
     "salary": "$110,000 - $130,000 per year",
     "job_description": "We are looking for a skilled DevOps Engineer to join our team and streamline our software development and deployment processes. The ideal candidate will have experience in CI/CD pipelines, cloud platforms, and containerization technologies such as Docker and Kubernetes.",
@@ -56,9 +64,11 @@
     "address": "9876 Rainier Ave, Seattle, WA 98101"
   },
   {
-    "logo": "company5_logo.png",
+   "name":"Empira",
+   "job_category": "Full-Time, Onsite, Remote",
+    "logo": "https://i.ibb.co/mcJ6nHJ/download-1.jpg",
     "engineer_title": "Full Stack Developer",
-    "LTD": "Unlimited",
+    "LTD": "Empira Unlimited",
     "location": "Toronto, ON, Canada",
     "salary": "CAD 80,000 - CAD 100,000 per year",
     "job_description": "We are seeking a talented Full Stack Developer to join our team and develop end-to-end software solutions. The ideal candidate will have experience in both frontend and backend development, with expertise in modern web frameworks and databases.",
@@ -70,9 +80,11 @@
     "address": "5678 Bay St, Toronto, ON M5J 2T3, Canada"
   },
   {
-    "logo": "company6_logo.png",
+   "name":"Microsoft",
+   "job_category": "Full-Time, Onsite, Remote",
+    "logo": "https://i.ibb.co/xMbL3tK/pngegg.png",
     "engineer_title": "UI/UX Designer",
-    "LTD": "Limited",
+    "LTD": "Microsoft",
     "location": "Berlin, Germany",
     "salary": "€60,000 - €80,000 per year",
     "job_description": "We are looking for a creative UI/UX Designer to join our team and design visually appealing and user-friendly interfaces for our web and mobile applications. The ideal candidate will have a strong background in user-centered design principles and proficiency in design tools such as Sketch, Figma, or Adobe XD.",

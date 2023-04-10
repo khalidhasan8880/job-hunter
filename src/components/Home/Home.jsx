@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import JobCategorysCard from '../JobCategorysCard/JobCategorysCard';
 import './Home.css'
 import { useLoaderData } from 'react-router-dom';
+import Card from '../Card/Card';
 const Home = () => {
     const [categories, setCategories] = useState([])
 
@@ -42,13 +43,13 @@ const [open, setOpen] = useState(false)
             <div className='mt-36 flex flex-col justify-center items-center'>
                 <h2 className='md:text-4xl text-3xl font-bold  my-5 '>Featured Job</h2>
                 <p className='description my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div>
+                <div className='grid md:grid-cols-2 gap-5 mt-14'>
                     {
-                        open?data.slice(0,data.length).map(job=> <h1>{job.phone}</h1>) : data.slice(0,4).map(job=> <h1>{job.phone}</h1>)
+                        open?data.map(job=> <Card job={job}></Card>) : data.slice(0,4).map(job=>  <Card job={job}></Card>)
                     }
                 </div>
 
-                <button onClick={seeMoreHandler}>{open? 'See Less': 'See More'}</button>
+                <button className='btn-primary' onClick={seeMoreHandler}>{open? 'See Less': 'See More'}</button>
             </div>
         </div>
     );

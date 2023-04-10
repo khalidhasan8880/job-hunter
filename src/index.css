@@ -7,7 +7,7 @@
 @layer components {
     .btn-primary {
         background-image: linear-gradient(to right, #7E8FFE 0%, rgb(151, 116, 255) 100%);
-        padding: 10px 20px;
+        padding: 10px 24px;
         text-align: center;
         color: white;
         border-radius: 10px;
