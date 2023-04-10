@@ -1,91 +1,86 @@
-{
-    "job_listings": [
-      {
-        "logo": "company1_logo.png",
-        "engineer_title": "Software Engineer",
-        "LTD": "Unlimited",
-        "location": "San Francisco, CA",
-        "salary": "$100,000 - $120,000 per year",
-        "job_description": "We are seeking a skilled Software Engineer to join our team and develop cutting-edge software applications. The ideal candidate will have experience in full-stack development, with expertise in modern web frameworks such as React and Node.js.",
-        "job_responsibility": "Responsibilities:\n- Develop and maintain software applications using modern web technologies\n- Collaborate with cross-functional teams to design and implement new features\n- Optimize software applications for performance and scalability\n- Conduct code reviews and provide feedback to improve code quality\n- Stay up-to-date with latest software development trends and best practices",
-        "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
-        "experiences": "Experience: 3+ years of professional software development experience",
-        "email": "jobs@company1.com",
-        "phone": "555-123-4567",
-        "address": "1234 Main St, San Francisco, CA 94101"
-      },
-      {
-        "logo": "company2_logo.png",
-        "engineer_title": "Data Scientist",
-        "LTD": "Limited",
-        "location": "New York, NY",
-        "salary": "$90,000 - $110,000 per year",
-        "job_description": "We are looking for a talented Data Scientist to join our team and analyze complex data sets to derive insights and make data-driven decisions. The ideal candidate will have expertise in statistical analysis, machine learning, and data visualization.",
-        "job_responsibility": "Responsibilities:\n- Analyze large and complex data sets to extract insights and patterns\n- Develop and implement machine learning models for predictive analytics\n- Collaborate with cross-functional teams to identify business opportunities and solve data-related problems\n- Create data visualizations and reports to communicate findings to stakeholders\n- Stay up-to-date with latest data science techniques and tools",
-        "education_requirement": "Education Requirement: Master's degree in Data Science, Statistics, or related field",
-        "experiences": "Experience: 2+ years of professional data science experience",
-        "email": "careers@company2.com",
-        "phone": "555-234-5678",
-        "address": "5678 Broadway, New York, NY 10001"
-      },
-      {
-        "logo": "company3_logo.png",
-        "engineer_title": "Frontend Developer",
-        "LTD": "Unlimited",
-        "location": "London, UK",
-        "salary": "£50,000 - £60,000 per year",
-        "job_description": "We are seeking a talented Frontend Developer to join our team and create visually appealing and user-friendly web interfaces. The ideal candidate will have a strong background in frontend development, with expertise in modern web technologies such as React, Angular, or Vue.",
-        "job_responsibility": "Responsibilities:\n- Develop and maintain frontend web interfaces using modern web technologies\n- Collaborate with UI/UX designers to implement visually appealing and responsive user interfaces\n- Optimize web interfaces for performance and cross-browser compatibility\n- Conduct code reviews and provide feedback to improve code quality\n- Stay up-to-date with latest frontend development trends and best practices",
-        "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
-        "experiences": "Experience: 3+ years of professional frontend development experience",
-        "email": "jobs@company3.com",
-        "phone": "+44 20 1234 5678",
-        "address": "123 High St, London, UK SW1A 1AA"
-      },
-      {
-        "logo": "company4_logo.png",
-        "engineer_title": "DevOps Engineer",
-        "LTD": "Limited",
-        "location": "Seattle, WA",
-        "salary": "$110,000 - $130,000 per year",
-        "job_description": "We are looking for a skilled DevOps Engineer to join our team and streamline our software development and deployment processes. The ideal candidate will have experience in CI/CD pipelines, cloud platforms, and containerization technologies such as Docker and Kubernetes.",
-        "job_responsibility": "Responsibilities:\n- Design, build, and maintain CI/CD pipelines for software development and deployment\n- Collaborate with development and operations teams to improve software delivery and infrastructure\n- Automate deployment and monitoring tasks using configuration management tools\n- Troubleshoot and resolve production incidents related to infrastructure and deployment\n- Stay up-to-date with latest DevOps practices and tools",
-        "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
-        "experiences": "Experience: 4+ years of professional DevOps experience",
-        "email": "careers@company4.com",
-        "phone": "555-345-6789",
-        "address": "9876 Rainier Ave, Seattle, WA 98101"
-      },
-      {
-        "logo": "company5_logo.png",
-        "engineer_title": "Full Stack Developer",
-        "LTD": "Unlimited",
-        "location": "Toronto, ON, Canada",
-        "salary": "CAD 80,000 - CAD 100,000 per year",
-        "job_description": "We are seeking a talented Full Stack Developer to join our team and develop end-to-end software solutions. The ideal candidate will have experience in both frontend and backend development, with expertise in modern web frameworks and databases.",
-        "job_responsibility": "Responsibilities:\n- Develop and maintain full-stack web applications using modern web technologies\n- Collaborate with cross-functional teams to design and implement new features\n- Optimize software applications for performance and scalability\n- Conduct code reviews and provide feedback to improve code quality\n- Stay up-to-date with latest software development trends and best practices",
-        "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
-        "experiences": "Experience: 3+ years of professional full-stack development experience",
-        "email": "jobs@company5.com",
-        "phone": "+1 416-123-4567",
-        "address": "5678 Bay St, Toronto, ON M5J 2T3, Canada"
-      },
-      {
-        "logo": "company6_logo.png",
-        "engineer_title": "UI/UX Designer",
-        "LTD": "Limited",
-        "location": "Berlin, Germany",
-        "salary": "€60,000 - €80,000 per year",
-        "job_description": "We are looking for a creative UI/UX Designer to join our team and design visually appealing and user-friendly interfaces for our web and mobile applications. The ideal candidate will have a strong background in user-centered design principles and proficiency in design tools such as Sketch, Figma, or Adobe XD.",
-        "job_responsibility": "Responsibilities:\n- Design and adobe XD.",
-        "experiences": "Experience: 3+ years of professional UI/UX design experience\n- Create wireframes, prototypes, and mockups for web and mobile applications\n- Conduct user research and usability testing to inform design decisions\n- Collaborate with development and product teams to iterate on designs and incorporate feedback\n- Stay up-to-date with latest UI/UX design trends and best practices\n- Prepare design assets for implementation by development team",
-        "education_requirement": "Education Requirement: Bachelor's degree in Graphic Design, Interaction Design, or related field",
-        "email": "careers@company6.com",
-        "phone": "+49 30 1234 5678",
-        "address": "123 Alexanderplatz, Berlin, Germany"
-      }
-    ]
+[
+  {
+    "logo": "company1_logo.png",
+    "engineer_title": "Software Engineer",
+    "LTD": "Unlimited",
+    "location": "San Francisco, CA",
+    "salary": "$100,000 - $120,000 per year",
+    "job_description": "We are seeking a skilled Software Engineer to join our team and develop cutting-edge software applications. The ideal candidate will have experience in full-stack development, with expertise in modern web frameworks such as React and Node.js.",
+    "job_responsibility": "Responsibilities:\n- Develop and maintain software applications using modern web technologies\n- Collaborate with cross-functional teams to design and implement new features\n- Optimize software applications for performance and scalability\n- Conduct code reviews and provide feedback to improve code quality\n- Stay up-to-date with latest software development trends and best practices",
+    "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
+    "experiences": "Experience: 3+ years of professional software development experience",
+    "email": "jobs@company1.com",
+    "phone": "555-123-4567",
+    "address": "1234 Main St, San Francisco, CA 94101"
+  },
+  {
+    "logo": "company2_logo.png",
+    "engineer_title": "Data Scientist",
+    "LTD": "Limited",
+    "location": "New York, NY",
+    "salary": "$90,000 - $110,000 per year",
+    "job_description": "We are looking for a talented Data Scientist to join our team and analyze complex data sets to derive insights and make data-driven decisions. The ideal candidate will have expertise in statistical analysis, machine learning, and data visualization.",
+    "job_responsibility": "Responsibilities:\n- Analyze large and complex data sets to extract insights and patterns\n- Develop and implement machine learning models for predictive analytics\n- Collaborate with cross-functional teams to identify business opportunities and solve data-related problems\n- Create data visualizations and reports to communicate findings to stakeholders\n- Stay up-to-date with latest data science techniques and tools",
+    "education_requirement": "Education Requirement: Master's degree in Data Science, Statistics, or related field",
+    "experiences": "Experience: 2+ years of professional data science experience",
+    "email": "careers@company2.com",
+    "phone": "555-234-5678",
+    "address": "5678 Broadway, New York, NY 10001"
+  },
+  {
+    "logo": "company3_logo.png",
+    "engineer_title": "Frontend Developer",
+    "LTD": "Unlimited",
+    "location": "London, UK",
+    "salary": "£50,000 - £60,000 per year",
+    "job_description": "We are seeking a talented Frontend Developer to join our team and create visually appealing and user-friendly web interfaces. The ideal candidate will have a strong background in frontend development, with expertise in modern web technologies such as React, Angular, or Vue.",
+    "job_responsibility": "Responsibilities:\n- Develop and maintain frontend web interfaces using modern web technologies\n- Collaborate with UI/UX designers to implement visually appealing and responsive user interfaces\n- Optimize web interfaces for performance and cross-browser compatibility\n- Conduct code reviews and provide feedback to improve code quality\n- Stay up-to-date with latest frontend development trends and best practices",
+    "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
+    "experiences": "Experience: 3+ years of professional frontend development experience",
+    "email": "jobs@company3.com",
+    "phone": "+44 20 1234 5678",
+    "address": "123 High St, London, UK SW1A 1AA"
+  },
+  {
+    "logo": "company4_logo.png",
+    "engineer_title": "DevOps Engineer",
+    "LTD": "Limited",
+    "location": "Seattle, WA",
+    "salary": "$110,000 - $130,000 per year",
+    "job_description": "We are looking for a skilled DevOps Engineer to join our team and streamline our software development and deployment processes. The ideal candidate will have experience in CI/CD pipelines, cloud platforms, and containerization technologies such as Docker and Kubernetes.",
+    "job_responsibility": "Responsibilities:\n- Design, build, and maintain CI/CD pipelines for software development and deployment\n- Collaborate with development and operations teams to improve software delivery and infrastructure\n- Automate deployment and monitoring tasks using configuration management tools\n- Troubleshoot and resolve production incidents related to infrastructure and deployment\n- Stay up-to-date with latest DevOps practices and tools",
+    "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
+    "experiences": "Experience: 4+ years of professional DevOps experience",
+    "email": "careers@company4.com",
+    "phone": "555-345-6789",
+    "address": "9876 Rainier Ave, Seattle, WA 98101"
+  },
+  {
+    "logo": "company5_logo.png",
+    "engineer_title": "Full Stack Developer",
+    "LTD": "Unlimited",
+    "location": "Toronto, ON, Canada",
+    "salary": "CAD 80,000 - CAD 100,000 per year",
+    "job_description": "We are seeking a talented Full Stack Developer to join our team and develop end-to-end software solutions. The ideal candidate will have experience in both frontend and backend development, with expertise in modern web frameworks and databases.",
+    "job_responsibility": "Responsibilities:\n- Develop and maintain full-stack web applications using modern web technologies\n- Collaborate with cross-functional teams to design and implement new features\n- Optimize software applications for performance and scalability\n- Conduct code reviews and provide feedback to improve code quality\n- Stay up-to-date with latest software development trends and best practices",
+    "education_requirement": "Education Requirement: Bachelor's degree in Computer Science or related field",
+    "experiences": "Experience: 3+ years of professional full-stack development experience",
+    "email": "jobs@company5.com",
+    "phone": "+1 416-123-4567",
+    "address": "5678 Bay St, Toronto, ON M5J 2T3, Canada"
+  },
+  {
+    "logo": "company6_logo.png",
+    "engineer_title": "UI/UX Designer",
+    "LTD": "Limited",
+    "location": "Berlin, Germany",
+    "salary": "€60,000 - €80,000 per year",
+    "job_description": "We are looking for a creative UI/UX Designer to join our team and design visually appealing and user-friendly interfaces for our web and mobile applications. The ideal candidate will have a strong background in user-centered design principles and proficiency in design tools such as Sketch, Figma, or Adobe XD.",
+    "job_responsibility": "Responsibilities:\n- Design and adobe XD.",
+    "experiences": "Experience: 3+ years of professional UI/UX design experience\n- Create wireframes, prototypes, and mockups for web and mobile applications\n- Conduct user research and usability testing to inform design decisions\n- Collaborate with development and product teams to iterate on designs and incorporate feedback\n- Stay up-to-date with latest UI/UX design trends and best practices\n- Prepare design assets for implementation by development team",
+    "education_requirement": "Education Requirement: Bachelor's degree in Graphic Design, Interaction Design, or related field",
+    "email": "careers@company6.com",
+    "phone": "+49 30 1234 5678",
+    "address": "123 Alexanderplatz, Berlin, Germany"
   }
-  
-  
-  
+]

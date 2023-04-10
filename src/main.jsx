@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
+import getData from './components/utils';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: getData
       },
       {
         path: '/blog',
