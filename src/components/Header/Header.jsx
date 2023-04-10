@@ -24,7 +24,11 @@ const Header = () => {
                 <button>Start Applying</button>
             </nav>
             {/* nav end */}
-            
+            <div className=''>
+                <h2 className='title'>One Step Closer To Your <br /><span className='dream-job text-transparent bg-clip-text'>Dream Job</span> </h2>
+                <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
+                <button></button>
+            </div>
         </header>
     );
 };
