@@ -1,8 +1,9 @@
 import React from 'react';
 import './Card.css'
-const Card = ({job}) => {
+import { Link } from 'react-router-dom';
+const Card = ({job, detailHandler}) => {
     const {logo, _id, name, job_category, engineer_title,} = job
-    console.log();
+ 
     return (
         <div className='bg-red-100 card rounded-md p-11'>
             <img className='w-44' src={logo} alt="" />
@@ -15,7 +16,7 @@ const Card = ({job}) => {
                 <span></span>
                 <span></span>
             </p>
-            <button className='btn-primary'>View Details</button>
+            <Link to={`/jobDetails/:${_id}`}><button onClick={()=> detailHandler(_id)} className='btn-primary'>View Details</button></Link>
         </div>
     );
 };

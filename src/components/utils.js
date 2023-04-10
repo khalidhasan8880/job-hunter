@@ -3,4 +3,5 @@ const getData = async ()=>{
     const data = await res.json()
     return data
 }
+
 export default getData;

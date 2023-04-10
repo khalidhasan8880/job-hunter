@@ -15,11 +15,16 @@ const Home = () => {
 
     const data = useLoaderData()
 
-const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false)
 
     const seeMoreHandler=()=> {
         setOpen(!open)
     }
+
+    const detailHandler=(id)=>{
+     
+    }
+
     return (
         <div>
             {/* banner */}
@@ -45,7 +50,7 @@ const [open, setOpen] = useState(false)
                 <p className='description my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='grid md:grid-cols-2 gap-5 mt-14'>
                     {
-                        open?data.map(job=> <Card job={job}></Card>) : data.slice(0,4).map(job=>  <Card job={job}></Card>)
+                        open?data.map(job=> <Card key={job.phone} detailHandler={detailHandler} job={job}></Card>) : data.slice(0,4).map(job=>  <Card key={job.phone} detailHandler={detailHandler} job={job}></Card>)
                     }
                 </div>
 

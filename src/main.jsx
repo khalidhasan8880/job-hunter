@@ -10,6 +10,7 @@ import {
 import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
 import getData from './components/utils';
+import JobDetails from './components/JobDetails/JobDetails';
 
 const router = createBrowserRouter([
   {
@@ -22,9 +23,15 @@ const router = createBrowserRouter([
         loader: getData
       },
       {
+        path: '/jobDetails/:id',
+        element: <JobDetails></JobDetails>,
+        loader: getData
+      },
+      {
         path: '/blog',
         element: <Blog></Blog>
       },
+      
     ]
   },
 ]);
