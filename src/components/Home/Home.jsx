@@ -40,7 +40,7 @@ const [open, setOpen] = useState(false)
             {/* feature section */}
 
             <div className='mt-36 flex flex-col justify-center items-center'>
-                <h2 className='md:text-4xl text-3xl font-bold  my-5 '>Job Category List</h2>
+                <h2 className='md:text-4xl text-3xl font-bold  my-5 '>Featured Job</h2>
                 <p className='description my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div>
                     {
