@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { json, useLoaderData, useParams } from 'react-router-dom';
 import { JobContext } from '../../App';
 import './JobDetails.css'
 import { CurrencyDollarIcon, EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { addToDb } from '../fakedb';
+
+
 const JobDetails = () => {
 
     const { id } = useParams()
@@ -11,11 +13,25 @@ const JobDetails = () => {
     const job = jobs.find(job => job._id === id)
     const { _id, name, job_category, logo, engineer_title, LTD, location, salary, job_description, job_responsibility, education_requirement, experiences, email, phone, address } = job
 
-    const applyButtonHandler =(id)=>{
-        addToDb(id)
-        console.log(id);
-    }
 
+    const applyButtonHandler=(id)=>{
+        let appliedJObs ;
+        const getAppliedJobs = localStorage.getItem('applied-jobs')
+        if (getAppliedJobs) {
+            appliedJObs = JSON.parse(getAppliedJobs)
+            const matched = appliedJObs.find(localId=>localId === id)
+            if (!matched) {
+                appliedJObs.push(id)
+            }else{
+                alert('already applied')
+            }
+        }else{
+            appliedJObs = []
+            appliedJObs.push(id)
+        }
+        localStorage.setItem('applied-jobs', JSON.stringify(appliedJObs))
+    }
+  
     return (
         <div>
             {/* for background images  */}
@@ -68,4 +84,4 @@ const JobDetails = () => {
     );
 };
 
-export default JobDetails;
+export default JobDetails
