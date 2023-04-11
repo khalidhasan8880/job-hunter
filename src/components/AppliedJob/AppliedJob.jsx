@@ -2,20 +2,32 @@ import React, { useContext, useEffect, useState } from 'react';
 import { JobContext } from '../../App';
 import AppliedCard from './AppliedCard';
 
+{/* <AppliedCard job={job}></AppliedCard> */}
+
+
 const AppliedJob = () => {
     const [appliedJob, setAppliedJob] = useState([])
     const jobs = useContext(JobContext)
-    useEffect(()=>{
+    useEffect(() => {
         let appliedJobs = []
         const getAppliedJobFromDb = localStorage.getItem('applied-jobs')
         const appliedJob = JSON.parse(getAppliedJobFromDb);
         console.log(appliedJob);
         for (const id of appliedJob) {
-            const matched = jobs.find(job=>job._id === id)
+            const matched = jobs.find(job => job._id === id)
             appliedJobs.push(matched)
         }
         setAppliedJob(appliedJobs)
-    },[])
+    }, [])
+
+
+    const [filter, setFilter] = useState('')
+    const filterOnsite=()=>{
+        setFilter('Onsite')
+    }
+    const filterRemote=()=>{
+        setFilter('Remote')
+    }
 
     return (
         <div>
@@ -25,8 +37,16 @@ const AppliedJob = () => {
             </div>
 
             <div className='container mx-auto'>
+                <div className='text-right'>
+                    <button onClick={filterRemote} className='btn-primary'>Filter by Remote</button>
+                    <button onClick={filterOnsite} className='btn-primary ml-3'>Filter by Onsite</button>
+                </div>
                 {
-                    appliedJob.map(job=> <AppliedCard job={job}></AppliedCard>)
+                    appliedJob.map(job => {
+                        if (job.job_category.find(category=>category===filter)) {
+                           return <AppliedCard job={job}></AppliedCard>
+                        }
+                    })
                 }
             </div>
         </div>
