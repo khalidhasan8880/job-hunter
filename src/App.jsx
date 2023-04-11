@@ -1,17 +1,23 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLoaderData } from 'react-router-dom'
 import Banner from './components/Banner/Banner'
 
+
+export const JobContext = createContext([])
+
 function App() {
-  const [count, setCount] = useState(0)
+  const jobs = useLoaderData()
+
 
   return (
-    <div className="App">
-      <Header></Header>
-      <Outlet></Outlet>
-    </div>
+    <JobContext.Provider value={jobs}>
+      <div className="App">
+        <Header></Header>
+        <Outlet></Outlet>
+      </div>
+    </JobContext.Provider>
   )
 }
 

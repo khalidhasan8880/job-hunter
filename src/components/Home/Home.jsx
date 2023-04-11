@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
 import JobCategorysCard from '../JobCategorysCard/JobCategorysCard';
 import './Home.css'
 import { useLoaderData } from 'react-router-dom';
 import Card from '../Card/Card';
+import { JobContext } from '../../App';
 const Home = () => {
     const [categories, setCategories] = useState([])
-
+const data = useContext(JobContext)
     useEffect(() => {
         fetch('job_category.json')
             .then(res => res.json())
             .then(categories => setCategories(categories))
     }, [])
 
-    const data = useLoaderData()
 
     const [open, setOpen] = useState(false)
 

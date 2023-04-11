@@ -1,0 +1,8 @@
+.bg {
+    background-image: url("./bg/Vector.png"), url("./bg/Vector-1.png");
+    background-position:
+    bottom left,
+    right top;
+    background-size: 336px;
+    background-repeat: no-repeat;
+}

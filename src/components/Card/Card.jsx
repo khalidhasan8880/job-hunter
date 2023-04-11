@@ -16,7 +16,7 @@ const Card = ({job, detailHandler}) => {
                 <span></span>
                 <span></span>
             </p>
-            <Link to={`/jobDetails/:${_id}`}><button onClick={()=> detailHandler(_id)} className='btn-primary'>View Details</button></Link>
+            <Link to={`/jobDetails/${_id}`}><button onClick={()=> detailHandler(_id)} className='btn-primary'>View Details</button></Link>
         </div>
     );
 };

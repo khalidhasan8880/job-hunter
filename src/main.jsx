@@ -11,25 +11,29 @@ import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
 import getData from './components/utils';
 import JobDetails from './components/JobDetails/JobDetails';
+import Statistics from './components/Statistics/Statistics';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    loader: getData,
     children: [
       {
         path: '/',
-        element: <Home></Home>,
-        loader: getData
+        element: <Home></Home>
       },
       {
-        path: '/jobDetails/:id',
-        element: <JobDetails></JobDetails>,
-        loader: getData
+        path: 'jobDetails/:id',
+        element: <JobDetails></JobDetails>
       },
       {
-        path: '/blog',
+        path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: 'statistics',
+        element: <Statistics></Statistics>
       },
       
     ]
