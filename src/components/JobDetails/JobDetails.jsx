@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { JobContext } from '../../App';
 import './JobDetails.css'
-import { CurrencyDollarIcon, EnvelopeIcon, PhoneIcon,  } from '@heroicons/react/24/solid'
+import { CurrencyDollarIcon, EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { addToDb } from '../fakedb';
 const JobDetails = () => {
 
     const { id } = useParams()
@@ -10,6 +11,10 @@ const JobDetails = () => {
     const job = jobs.find(job => job._id === id)
     const { _id, name, job_category, logo, engineer_title, LTD, location, salary, job_description, job_responsibility, education_requirement, experiences, email, phone, address } = job
 
+    const applyButtonHandler =(id)=>{
+        addToDb(id)
+        console.log(id);
+    }
 
     return (
         <div>
@@ -39,7 +44,7 @@ const JobDetails = () => {
 
                 {/* card  */}
                 <div className=' md:col-span-2'>
-                    <div className='w-96 '>
+                    <div className='w-96 mx-auto'>
                         <div class="grid grid-cols-1 divide-y p-5 rounded-md bg-gradient-to-r from-cyan-50 to-blue-50 py-11">
                             <div className=''>
                                 <h3 className='mt-6 mb-2 text-xl font-semibold'>Job Details</h3>
@@ -52,10 +57,10 @@ const JobDetails = () => {
                             <div className=''>
                                 <p className='my-2'><PhoneIcon className="h-6 w-6 text-sky-300 inline" /> Phone :  {phone}</p>
                                 <p className='my-2'><EnvelopeIcon className="h-6 w-6 text-sky-300 inline" /> Email :  {email}</p>
-                                <p className='my-2'><CurrencyDollarIcon className="h-6 w-6 text-sky-300 inline" /> Address :  {address}</p>
+                                <p className='my-2'><MapPinIcon className="h-6 w-6 text-sky-300 inline" /> Address :  {address}</p>
                             </div>
                         </div>
-                        <button className='btn-primary w-full'>Apply Now</button>
+                        <button onClick={()=> applyButtonHandler(id)} className='btn-primary w-full'>Apply Now</button>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 .card {
-    height: 333px;
-    width: 654px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100% ;
 }

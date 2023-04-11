@@ -2,7 +2,7 @@
   {
     "_id": "64342a4a84647c937b9d772b",
    "name":"Tesla",
-   "job_category": ["Full-Time, Onsite, Remote"],
+   "job_category": ["Full-Time","Onsite", "Remote"],
     "logo": "https://i.ibb.co/hVXbdHG/tesla-9-1.png",
     "engineer_title": "Software Engineer",
     "LTD": "Tesla",
@@ -19,7 +19,7 @@
   {
     "_id": "64342a4a82ba09f8be274c3f",
    "name":"Netflix",
-   "job_category": ["Full-Time, Remote"],
+   "job_category": ["Full-Time", "Remote"],
     "logo": "https://i.ibb.co/7nNSKqp/netflix-4-1.png",
     "engineer_title": "Data Scientist",
     "LTD": "Netflix",
@@ -36,7 +36,7 @@
   {
     "_id": "64342a4ac4f493d67676191e",
    "name":"Google",
-   "job_category": ["Full-Time, Onsite"],
+   "job_category": ["Full-Time", "Onsite"],
     "logo": "https://i.ibb.co/NLtx3KY/google-1-1-1.png",
     "engineer_title": "Frontend Developer",
     "LTD": "Google LLC",
@@ -53,7 +53,7 @@
   {
     "_id": "64342a4a7721632b9efc6710",
    "name":"Apple",
-   "job_category":[ "Onsite, Remote"],
+   "job_category":[ "Onsite", "Remote"],
     "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png",
     "engineer_title": "DevOps Engineer",
     "LTD": "Apple",
@@ -70,7 +70,7 @@
   {
     "_id": "64342a4a26c055a19de3d695",
    "name":"Empira",
-   "job_category": ["Full-Time, Onsite, Remote"],
+   "job_category": ["Full-Time", "Onsite", "Remote"],
     "logo": "https://i.ibb.co/mcJ6nHJ/download-1.jpg",
     "engineer_title": "Full Stack Developer",
     "LTD": "Empira Unlimited",
@@ -87,7 +87,7 @@
   {
     "_id": "64342a4a67a11816c9db2720",
    "name":"Microsoft",
-   "job_category": ["Full-Time, Onsite, Remote"],
+   "job_category": ["Full-Time", "Onsite", "Remote"],
     "logo": "https://i.ibb.co/xMbL3tK/pngegg.png",
     "engineer_title": "UI/UX Designer",
     "LTD": "Microsoft",

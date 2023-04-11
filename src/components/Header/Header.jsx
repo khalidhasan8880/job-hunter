@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
-
 const Header = () => {
     return (
         <nav className='md:flex justify-between items-center my-1  absolute mx-auto px-2 md:px-44 w-full'>
