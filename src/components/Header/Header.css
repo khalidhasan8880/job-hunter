@@ -6,3 +6,10 @@
 .header{
     background-color: #F8F9FF;
 }
+.active{
+    color: #2d49ff;
+    background-color: #abb6fd;
+    padding: 5px 21px;
+    border-radius: 4px;
+    
+}

@@ -43,7 +43,7 @@ const AppliedJob = () => {
                 </div>
                 {
                     appliedJob.map(job => {
-                        if (job.job_category.find(category=>category===filter)) {
+                        if (job.job_category.find(category=>category===filter || filter === '')) {
                            return <AppliedCard job={job}></AppliedCard>
                         }
                     })

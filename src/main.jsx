@@ -13,11 +13,13 @@ import getData from './components/utils';
 import JobDetails from './components/JobDetails/JobDetails';
 import Statistics from './components/Statistics/Statistics';
 import AppliedJob from './components/AppliedJob/AppliedJob';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <PageNotFound></PageNotFound>,
     loader: getData,
     children: [
       {
