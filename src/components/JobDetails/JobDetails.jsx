@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { JobContext } from '../../App';
 import './JobDetails.css'
-import backgroundImg from '../../assets/All Images/Vector.png'
-import backgroundImg1 from '../../assets/All Images/Vector-1.png'
+import { CurrencyDollarIcon, EnvelopeIcon, PhoneIcon,  } from '@heroicons/react/24/solid'
 const JobDetails = () => {
 
     const { id } = useParams()
@@ -20,23 +19,44 @@ const JobDetails = () => {
             </div>
             {/* for job Details  */}
 
-            <div className='grid md:grid-cols-6 pt-24'>
-
-                <div className='bg-red-100 md:col-span-4'>
-                    <p><span className='my-8 text-xl font-semibold'>Job Description: </span>
-                        {job_description}
-                    </p>
-                    <p><span className='my-8 text-xl font-semibold'>Job Responsibility: </span>
-                        {job_responsibility}
-                    </p>
-                    <p><span className='my-8 text-xl font-semibold'>Educational Requirement: </span>
-                        {education_requirement}
-                    </p>
+            <div className='grid md:grid-cols-6 gap-x-4 container mx-auto mt-12'>
+                <div className=' md:col-span-4'>
+                    <div className='p-7'>
+                        <p className='my-8'><span className='my-8 text-xl font-semibold'>Job Description: </span>
+                            {job_description}
+                        </p>
+                        <p className='my-8'><span className='my-8 text-xl font-semibold'>Job Responsibility: </span>
+                            {job_responsibility}
+                        </p>
+                        <p className='my-8'><span className='my-8 text-xl font-semibold'>Educational Requirement: </span> <br /><br />
+                            {education_requirement}
+                        </p>
+                        <p className='my-8'><span className='my-8 text-xl font-semibold'>Educational Requirement: </span> <br /><br />
+                            {experiences}
+                        </p>
+                    </div>
                 </div>
 
                 {/* card  */}
-                <div className='bg-sky-100 md:col-span-2'>
-                    <h1>card</h1>
+                <div className=' md:col-span-2'>
+                    <div className='w-96 '>
+                        <div class="grid grid-cols-1 divide-y p-5 rounded-md bg-gradient-to-r from-cyan-50 to-blue-50 py-11">
+                            <div className=''>
+                                <h3 className='mt-6 mb-2 text-xl font-semibold'>Job Details</h3>
+                            </div>
+                            <div className=''>
+                                <p className='my-2'><CurrencyDollarIcon className="h-6 w-6 text-sky-300 inline" /> Salary :  {salary}</p>
+                                <p className='my-2'><CurrencyDollarIcon className="h-6 w-6 text-sky-300 inline" /> Job Title :  {engineer_title}</p>
+                                <h3 className='mt-6 mb-2 text-xl font-semibold'>Contact information</h3>
+                            </div>
+                            <div className=''>
+                                <p className='my-2'><PhoneIcon className="h-6 w-6 text-sky-300 inline" /> Phone :  {phone}</p>
+                                <p className='my-2'><EnvelopeIcon className="h-6 w-6 text-sky-300 inline" /> Email :  {email}</p>
+                                <p className='my-2'><CurrencyDollarIcon className="h-6 w-6 text-sky-300 inline" /> Address :  {address}</p>
+                            </div>
+                        </div>
+                        <button className='btn-primary w-full'>Apply Now</button>
+                    </div>
                 </div>
             </div>
         </div>
