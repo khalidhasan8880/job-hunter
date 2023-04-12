@@ -12,7 +12,7 @@
 - Browser Data will be saved in DB
 
 ## 🔗 Links
-[Live website[ ]]()
+[Live website](tremendous-kitten.surge.sh)
 
 
 ## Documentation
