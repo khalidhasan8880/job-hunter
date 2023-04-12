@@ -26,7 +26,7 @@ const Header = () => {
             </ul>
             <button className='btn-primary font-semibold'>Start Applying</button>
             <button onClick={navHandler} className='bg-red-300 text-white text-3xl lg:hidden'>{open ? <XMarkIcon className='w-6 h-6 text-sky-300'></XMarkIcon> : <Bars3Icon className='w-6 h-6 text-sky-300'></Bars3Icon>}</button>
-            <div className={`${open? '': 'hidden'} absolute top-20 bg-cyan-500 rounded-md px-3 py-7`}>
+            <div className={`${open? '': 'hidden'} lg:hidden absolute top-20 bg-cyan-500 rounded-md px-3 py-7`}>
                 <ul className='text-xl flex flex-col gap-y-10 font-semibold text-center'>
                     <li>
                         <NavLink to="/">Home</NavLink>

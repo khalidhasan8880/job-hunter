@@ -11,9 +11,9 @@ const Card = ({job, detailHandler}) => {
             <img className='w-20 h-9' src={logo} alt="" />
             <h3  className='my-2 text-xl font-semibold'>{engineer_title}</h3>
             <p>{LTD}</p>
-           <div className='flex'>
+           <div className='flex flex-wrap'>
            {
-                job_category.map(category=> <button className='border-2 description border-sky-400 text-sky-400 rounded-md mr-6 px-6 py-2'>{category}</button>)
+                job_category.map(category=> <button className='border-2 description border-sky-400 text-sky-400 rounded-md mr-3 px-4 py-2'>{category}</button>)
             }
            </div>
             <p className='description flex flex-wrap'>

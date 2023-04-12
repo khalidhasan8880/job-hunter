@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { JobContext } from '../../App';
 import AppliedCard from './AppliedCard';
 
-{/* <AppliedCard job={job}></AppliedCard> */}
+{/* <AppliedCard job={job}></AppliedCard> */ }
 
 
 const AppliedJob = () => {
@@ -11,21 +11,23 @@ const AppliedJob = () => {
     useEffect(() => {
         let appliedJobs = []
         const getAppliedJobFromDb = localStorage.getItem('applied-jobs')
-        const appliedJob = JSON.parse(getAppliedJobFromDb);
-        console.log(appliedJob);
-        for (const id of appliedJob) {
-            const matched = jobs.find(job => job._id === id)
-            appliedJobs.push(matched)
+        if (getAppliedJobFromDb) {
+            const appliedJob = JSON.parse(getAppliedJobFromDb);
+            console.log(appliedJob);
+            for (const id of appliedJob) {
+                const matched = jobs.find(job => job._id === id)
+                appliedJobs.push(matched)
+            }
+            setAppliedJob(appliedJobs)
         }
-        setAppliedJob(appliedJobs)
     }, [])
 
 
     const [filter, setFilter] = useState('')
-    const filterOnsite=()=>{
+    const filterOnsite = () => {
         setFilter('Onsite')
     }
-    const filterRemote=()=>{
+    const filterRemote = () => {
         setFilter('Remote')
     }
 
@@ -42,13 +44,13 @@ const AppliedJob = () => {
                     <button onClick={filterOnsite} className='btn-primary ml-3'>Filter by Onsite</button>
                 </div>
                 <div className='container'>
-                {
-                    appliedJob.map(job => {
-                        if (job?.job_category.find(category=>category===filter || filter === '')) {
-                           return <AppliedCard job={job}></AppliedCard>
-                        }
-                    })
-                }
+                    {
+                        appliedJob.map(job => {
+                            if (job?.job_category.find(category => category === filter || filter === '')) {
+                                return <AppliedCard job={job}></AppliedCard>
+                            }
+                        })
+                    }
                 </div>
             </div>
         </div>
