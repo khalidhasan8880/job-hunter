@@ -19,7 +19,7 @@ const Statistics = () => {
             <div className='flex justify-center items-center flex-col pt-56'>
                 <h1 className='text-3xl font-bold'>My Assignment Result Status</h1>
                 
-                <PieChart width={600} height={600}>
+                <PieChart width={500} height={500}>
                     <Pie
                         dataKey="value"
                         isAnimationActive={false}
