@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const AppliedCard = ({ job }) => {
     const { logo, job_category, engineer_title, LTD, location, salary, _id } = job
     return (
-        <div className='w-full border rounded-md flex justify-between items-center p-4 m-5'>
+        <div className='w-full border rounded-md flex justify-between items-center p-4 mt-5 flex-wrap'>
 
-            <div className='flex items-center gap-5'>
+            <div className='flex items-center flex-wrap gap-5'>
                 <div className='bg-gray-300 w-44 h-44 rounded-md flex justify-center items-center'>
                     <img className='w-32' src={logo} alt="" />
                 </div>

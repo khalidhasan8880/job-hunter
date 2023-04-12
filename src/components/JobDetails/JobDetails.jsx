@@ -3,7 +3,7 @@ import { json, useLoaderData, useParams } from 'react-router-dom';
 import { JobContext } from '../../App';
 import './JobDetails.css'
 import { CurrencyDollarIcon, EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/solid'
-import { addToDb } from '../fakedb';
+
 
 
 const JobDetails = () => {
@@ -40,7 +40,7 @@ const JobDetails = () => {
             </div>
             {/* for job Details  */}
 
-            <div className='grid md:grid-cols-6 gap-x-4 container mx-auto mt-12'>
+            <div className='grid md:grid-cols-6 gap-x-4  mx-auto mt-12'>
                 <div className=' md:col-span-4'>
                     <div className='p-7'>
                         <p className='my-8'><span className='my-8 text-xl font-semibold'>Job Description: </span>

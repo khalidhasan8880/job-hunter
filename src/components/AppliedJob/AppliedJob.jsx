@@ -36,18 +36,20 @@ const AppliedJob = () => {
                 <h2 className='md:text-4xl text-3xl text-center mt-11 font-bold'>Applied Job</h2>
             </div>
 
-            <div className='container mx-auto'>
+            <div className=' mx-auto'>
                 <div className='text-right'>
                     <button onClick={filterRemote} className='btn-primary'>Filter by Remote</button>
                     <button onClick={filterOnsite} className='btn-primary ml-3'>Filter by Onsite</button>
                 </div>
+                <div className='container'>
                 {
                     appliedJob.map(job => {
-                        if (job.job_category.find(category=>category===filter || filter === '')) {
+                        if (job?.job_category.find(category=>category===filter || filter === '')) {
                            return <AppliedCard job={job}></AppliedCard>
                         }
                     })
                 }
+                </div>
             </div>
         </div>
     );

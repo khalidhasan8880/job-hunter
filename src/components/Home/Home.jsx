@@ -26,7 +26,7 @@ const data = useContext(JobContext)
     }
 
     return (
-        <div>
+        <div className=''>
             {/* banner */}
             <div className='bg-primary'>
                 <Banner></Banner>
@@ -34,10 +34,10 @@ const data = useContext(JobContext)
 
             {/* job category section */}
             <div className='mt-36 flex flex-col justify-center items-center'>
-                <h2 className='md:text-4xl text-3xl font-bold  my-5 '>Job Category List</h2>
-                <p className='description my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <h2 className='md:text-4xl text-3xl font-bold  my-2 '>Job Category List</h2>
+                <p className='description text-center my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-                <div className=' flex flex-wrap gap-6 px-44 pt-9 mb-10'>
+                <div className=' flex flex-wrap gap-6 justify-center pt-9'>
                     {
                         categories.map(category => <JobCategorysCard key={category._id} category={category}></JobCategorysCard>)
                     }
@@ -46,9 +46,9 @@ const data = useContext(JobContext)
             {/* feature section */}
 
             <div className='mt-36 flex flex-col justify-center items-center'>
-                <h2 className='md:text-4xl text-3xl font-bold  my-5 '>Featured Job</h2>
-                <p className='description my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className='grid md:grid-cols-2 gap-5 mt-14'>
+                <h2 className='md:text-4xl text-3xl font-bold  my-2 '>Featured Job</h2>
+                <p className='description text-center my-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <div className='grid md:grid-cols-2 gap-4 mt-14 box-border'>
                     {
                         open?data.map(job=> <Card key={job.phone} detailHandler={detailHandler} job={job}></Card>) : data.slice(0,4).map(job=>  <Card key={job.phone} detailHandler={detailHandler} job={job}></Card>)
                     }

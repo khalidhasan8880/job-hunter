@@ -7,7 +7,7 @@ const Card = ({job, detailHandler}) => {
     const {logo, _id, name, LTD, job_category, engineer_title, address, location, salary} = job
  
     return (
-        <div className='card rounded-md p-11 flex flex-col justify-between border'>
+        <div className='card rounded-md p-9 flex flex-col justify-between border'>
             <img className='w-20 h-9' src={logo} alt="" />
             <h3  className='my-2 text-xl font-semibold'>{engineer_title}</h3>
             <p>{LTD}</p>
